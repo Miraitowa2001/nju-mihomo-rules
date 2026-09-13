@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "acm.org",
+        "acs.org",
+        "arxiv.org",
+        "cambridge.org",
+        "clarivate.com",
+        "cnki.com.cn",
+        "cnki.net",
+        "cqvip.com",
+        "crossref.org",
+        "doi.org",
+        "ebscohost.com",
+        "elsevier.com",
+        "ieee.org",
+        "jstor.org",
+        "nature.com",
+        "ncbi.nlm.nih.gov",
+        "orcid.org",
+        "oup.com",
+        "proquest.com",
+        "rsc.org",
+        "sagepub.com",
+        "science.org",
+        "sciencedirect.com",
+        "scopus.com",
+        "springer.com",
+        "springerlink.com",
+        "tandfonline.com",
+        "wanfangdata.com.cn",
+        "webofscience.com",
+        "wiley.com"
+      ]
+    }
+  ]
+}
