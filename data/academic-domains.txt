@@ -1,0 +1,37 @@
+# 中文学术平台
+cnki.net
+cnki.com.cn
+wanfangdata.com.cn
+cqvip.com
+
+# 综合检索、引文与数据库
+webofscience.com
+clarivate.com
+scopus.com
+proquest.com
+ebscohost.com
+jstor.org
+
+# 出版商与学会
+sciencedirect.com
+elsevier.com
+springer.com
+springerlink.com
+nature.com
+wiley.com
+ieee.org
+acm.org
+science.org
+acs.org
+rsc.org
+tandfonline.com
+sagepub.com
+oup.com
+cambridge.org
+
+# 开放学术基础设施
+arxiv.org
+doi.org
+crossref.org
+orcid.org
+ncbi.nlm.nih.gov

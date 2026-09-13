@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | `rules/nju-campus.yaml` | 南京大学公网地址 | 默认启用 |
 | `rules/nju-private.yaml` | VPN 下发的私有地址 | 按需启用，可能和家庭、公司或容器网络冲突 |
+| `rules/academic-domains.yaml` | 常见中外文学术平台域名 | 按需启用，通过学校出口访问订阅资源 |
 
 `nju-campus.yaml` 保留了原始路由对 `219.219.118.25` 的排除。该地址是日志中选中的 VPN 接入节点，把它重新送进 VPN 可能形成路由回环。
 
@@ -34,10 +35,19 @@ rule-providers:
     path: ./ruleset/nju-private.yaml
     interval: 86400
 
+  academic-domains:
+    type: http
+    behavior: domain
+    format: yaml
+    url: https://raw.githubusercontent.com/<OWNER>/nju-mihomo-rules/<BRANCH>/rules/academic-domains.yaml
+    path: ./ruleset/academic-domains.yaml
+    interval: 86400
+
 rules:
   # 必须放在私网直连、GEOIP,CN 和 MATCH 之前
   - RULE-SET,nju-campus,南大VPN,no-resolve
   # - RULE-SET,nju-private,南大VPN,no-resolve
+  - RULE-SET,academic-domains,南大VPN
   - MATCH,默认策略
 ```
 
