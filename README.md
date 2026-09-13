@@ -14,15 +14,13 @@
 
 ## Mihomo 配置
 
-将下面的 `<OWNER>` 和 `<BRANCH>` 替换为仓库所有者及分支名：
-
 ```yaml
 rule-providers:
   nju-campus:
     type: http
     behavior: ipcidr
     format: yaml
-    url: https://raw.githubusercontent.com/<OWNER>/nju-mihomo-rules/<BRANCH>/rules/nju-campus.yaml
+    url: https://raw.githubusercontent.com/Miraitowa2001/nju-mihomo-rules/main/rules/nju-campus.yaml
     path: ./ruleset/nju-campus.yaml
     interval: 86400
 
@@ -31,7 +29,7 @@ rule-providers:
     type: http
     behavior: ipcidr
     format: yaml
-    url: https://raw.githubusercontent.com/<OWNER>/nju-mihomo-rules/<BRANCH>/rules/nju-private.yaml
+    url: https://raw.githubusercontent.com/Miraitowa2001/nju-mihomo-rules/main/rules/nju-private.yaml
     path: ./ruleset/nju-private.yaml
     interval: 86400
 
@@ -39,7 +37,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://raw.githubusercontent.com/<OWNER>/nju-mihomo-rules/<BRANCH>/rules/academic-domains.yaml
+    url: https://raw.githubusercontent.com/Miraitowa2001/nju-mihomo-rules/main/rules/academic-domains.yaml
     path: ./ruleset/academic-domains.yaml
     interval: 86400
 
